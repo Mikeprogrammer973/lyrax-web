@@ -16,8 +16,6 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const { name, email, message, subject } = contactSchema.parse(body)
 
-    console.log('Contato recebido:', { name, email, message, subject })
-
     // email para suporte
     emailFactory.sendEmail({
       subject: subject || 'Nova mensagem de contato',
@@ -28,7 +26,7 @@ export async function POST(request: NextRequest) {
         {
           header,
           body: {
-            title: `Nova mensagem de contato de ${name}`,
+            title: `Nova mensagem de contato de ${name} (${email})`,
             message
           },
           footer,

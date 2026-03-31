@@ -30,8 +30,8 @@ const header: IHeaderConfig = {
 const footer: IFooterConfig = {
     show: true,
     links: [
-    { text: 'Termos de Serviço', url: 'https://lyrax.com/terms' },
-    { text: 'Política de Privacidade', url: 'https://lyrax.com/privacy' }
+    { text: 'Termos', url: 'https://lyrax.com/terms' },
+    { text: 'Privacidade', url: 'https://lyrax.com/privacy' }
     ],
     socialLinks: [
     { platform: 'facebook', url: 'https://twitter.com/lyraxapp' },
