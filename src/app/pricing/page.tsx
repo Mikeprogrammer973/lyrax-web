@@ -9,30 +9,28 @@ export default function PricingPage() {
       <Header />
       <main className="pt-24 pb-16 bg-linear-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Hero Section */}
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-4 py-2 mb-6">
-              <Heart className="h-4 w-4 text-primary-600" />
-              <span className="text-sm font-medium text-primary-600">Para sempre grátis</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-purple-50 px-4 py-2 mb-6">
+              <Heart className="h-4 w-4 text-purple-600" />
+              <span className="text-sm font-medium text-purple-600">Para sempre grátis</span>
             </div>
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-4">
               Simples, generoso e
-              <span className="bg-linear-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">
                 {' '}100% gratuito
               </span>
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Acreditamos que a criatividade não deve ter barreiras. Por isso, todas as funcionalidades 
-              do Lyrax são completamente gratuitas. Sem pegadinhas, sem planos pagos.
+              da LyraX são completamente gratuitas. Sem pegadinhas, sem planos pagos.
             </p>
           </div>
 
-          {/* Card Principal */}
           <div className="max-w-md mx-auto mb-16">
             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden transform hover:scale-105 transition-transform duration-300">
-              <div className="bg-linear-to-r from-primary-600 to-primary-500 p-6 text-center">
+              <div className="bg-linear-to-r from-purple-600 to-purple-500 p-6 text-center">
                 <Sparkles className="h-12 w-12 text-white mx-auto mb-3" />
-                <h2 className="text-2xl font-bold text-white">Lyrax Gratuito</h2>
+                <h2 className="text-2xl font-bold text-white">LyraX Gratuito</h2>
                 <p className="text-white/90 text-sm">Para sempre</p>
               </div>
               <div className="p-8 text-center">
@@ -44,8 +42,8 @@ export default function PricingPage() {
                   Sem compromisso. Sem cartão de crédito. Sem anúncios.
                 </p>
                 <a
-                  href="https://app.lyrax.com/signup"
-                  className="block w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                  href="/auth/signup"
+                  className="block w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
                 >
                   Começar a escrever
                 </a>
@@ -65,12 +63,11 @@ export default function PricingPage() {
             </div>
           </div>
 
-          {/* Por que gratuito? */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="bg-linear-to-r from-primary-50 to-primary-100/50 rounded-2xl p-8">
+            <div className="bg-linear-to-r from-purple-50 to-purple-100/50 rounded-2xl p-8">
               <div className="text-center mb-6">
-                <Heart className="h-10 w-10 text-primary-600 mx-auto mb-3" />
-                <h2 className="text-2xl font-bold text-gray-900">Por que o Lyrax é gratuito?</h2>
+                <Heart className="h-10 w-10 text-purple-600 mx-auto mb-3" />
+                <h2 className="text-2xl font-bold text-gray-900">Por que a LyraX é gratuito?</h2>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -105,17 +102,16 @@ export default function PricingPage() {
             </div>
           </div>
 
-          {/* Depoimento */}
           <div className="max-w-2xl mx-auto text-center mb-16">
             <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
               <Star className="h-8 w-8 text-yellow-400 mx-auto mb-3 fill-yellow-400" />
               <p className="text-gray-600 italic mb-4">
-                &quot;É incrível encontrar uma plataforma tão completa e gratuita. O Lyrax me deu a liberdade 
+                &quot;É incrível encontrar uma plataforma tão completa e gratuita. A LyraX me deu a liberdade 
                 de publicar sem me preocupar com custos.&quot;
               </p>
               <div className="flex items-center justify-center gap-2">
-                <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-                  <span className="text-primary-600 font-semibold">A</span>
+                <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                  <span className="text-purple-600 font-semibold">A</span>
                 </div>
                 <div className="text-left">
                   <p className="font-semibold text-gray-900 text-sm">Ana Clara</p>
@@ -125,19 +121,18 @@ export default function PricingPage() {
             </div>
           </div>
 
-          {/* FAQ Preços */}
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">
               Perguntas frequentes sobre preços
             </h2>
             <div className="space-y-4">
               <FaqItem 
-                question="O Lyrax realmente será sempre gratuito?"
+                question="A LyraX realmente será sempre gratuito?"
                 answer="Sim! Nosso compromisso é manter a plataforma gratuita para todos os usuários. Acreditamos que a criatividade não deve ter barreiras financeiras."
               />
               <FaqItem 
                 question="Como vocês se mantêm sem cobrar?"
-                answer="Atualmente, mantemos a plataforma com recursos próprios e doações voluntárias de usuários que desejam apoiar o projeto. No futuro, podemos oferecer recursos opcionais de suporte, mas o core do Lyrax continuará gratuito."
+                answer="Atualmente, mantemos a plataforma com recursos próprios e doações voluntárias de usuários que desejam apoiar o projeto. No futuro, podemos oferecer recursos opcionais de suporte, mas o core da LyraX continuará gratuito."
               />
               <FaqItem 
                 question="Existe limite de publicações?"
@@ -150,17 +145,16 @@ export default function PricingPage() {
             </div>
           </div>
 
-          {/* Call to Action */}
           <div className="max-w-2xl mx-auto mt-12 text-center">
-            <div className="bg-linear-to-r from-primary-600 to-primary-500 rounded-2xl p-8 text-white">
+            <div className="bg-linear-to-r from-purple-600 to-purple-500 rounded-2xl p-8 text-white">
               <Infinity className="h-10 w-10 mx-auto mb-3 opacity-90" />
               <h2 className="text-xl font-bold mb-2">Sem limites. Sem custos.</h2>
               <p className="text-white/90 mb-4">
                 Comece a escrever hoje mesmo. Sua voz merece ser ouvida.
               </p>
               <a
-                href="https://app.lyrax.com/signup"
-                className="inline-flex items-center gap-2 bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                href="/auth/signup"
+                className="inline-flex items-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Criar conta gratuita
                 <Sparkles className="h-4 w-4" />
@@ -174,11 +168,10 @@ export default function PricingPage() {
   )
 }
 
-// Componentes auxiliares
 function FeatureItem({ text }: { text: string }) {
   return (
     <li className="flex items-center gap-2 text-sm text-gray-600">
-      <Check className="h-4 w-4 text-primary-500 shrink-0" />
+      <Check className="h-4 w-4 text-purple-500 shrink-0" />
       <span>{text}</span>
     </li>
   )

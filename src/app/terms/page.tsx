@@ -174,8 +174,8 @@ export default function TermsPage() {
                         <h3 className="font-semibold text-purple-900 mb-2">Dúvidas?</h3>
                         <p className="text-purple-800 text-sm">
                           Em caso de dúvidas sobre estes Termos, entre em contato conosco através do email{' '}
-                          <a href="mailto:contato@lyraX.com" className="underline font-medium hover:text-purple-900">
-                            contato@lyraX.com
+                          <a href="mailto:technopro.net@gmail.com" className="underline font-medium hover:text-purple-900">
+                            technopro.net@gmail.com
                           </a>
                         </p>
                       </div>

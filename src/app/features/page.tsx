@@ -25,15 +25,14 @@ export default function FeaturesPage() {
       <Header />
       <main className="pt-24 pb-16 bg-linear-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Hero Section */}
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-4 py-2 mb-6">
-              <Sparkles className="h-4 w-4 text-primary-600" />
-              <span className="text-sm font-medium text-primary-600">Recursos Poderosos</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-purple-50 px-4 py-2 mb-6">
+              <Sparkles className="h-4 w-4 text-purple-600" />
+              <span className="text-sm font-medium text-purple-600">Recursos Poderosos</span>
             </div>
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-4">
               Tudo que você precisa para
-              <span className="bg-linear-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">
                 {' '}escrever e compartilhar
               </span>
             </h1>
@@ -43,14 +42,13 @@ export default function FeaturesPage() {
             </p>
           </div>
 
-          {/* Destaque Principal */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="bg-linear-to-r from-primary-50 to-primary-100/50 rounded-2xl p-8">
+            <div className="bg-linear-to-r from-purple-50 to-purple-100/50 rounded-2xl p-8">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 rounded-full bg-primary-100 px-3 py-1 mb-4">
-                    <PenTool className="h-3 w-3 text-primary-600" />
-                    <span className="text-xs font-medium text-primary-600">Editor Premium</span>
+                  <div className="inline-flex items-center gap-2 rounded-full bg-purple-100 px-3 py-1 mb-4">
+                    <PenTool className="h-3 w-3 text-purple-600" />
+                    <span className="text-xs font-medium text-purple-600">Editor Premium</span>
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">Editor de texto avançado</h2>
                   <p className="text-gray-600">
@@ -59,24 +57,23 @@ export default function FeaturesPage() {
                   </p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm">
-                  <div className="border-l-4 border-primary-500 pl-4">
+                  <div className="border-l-4 border-purple-500 pl-4">
                     <p className="text-gray-600 italic text-sm mb-2">
                       &quot;As palavras dançam sob a lua, como pensamentos que nunca dormem.&quot;
                     </p>
-                    <p className="text-xs text-gray-400">— Poema de exemplo</p>
+                    <p className="text-xs text-gray-400">— LyraX</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Grid de Features */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             <FeatureCard 
               icon={PenTool}
               title="Editor Poderoso"
               description="Formatação rica, personalização de fonte e tamanho. Escreva da forma que preferir."
-              color="primary"
+              color="purple"
             />
             <FeatureCard 
               icon={Layout}
@@ -146,10 +143,9 @@ export default function FeaturesPage() {
             />
           </div>
 
-          {/* Comparativo */}
           <div className="max-w-4xl mx-auto mb-16">
             <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
-              Por que escolher o Lyrax?
+              Por que escolher a LyraX?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
@@ -180,26 +176,26 @@ export default function FeaturesPage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-linear-to-r from-primary-50 to-primary-100/50 rounded-xl p-6">
+              <div className="bg-linear-to-r from-purple-50 to-purple-100/50 rounded-xl p-6">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                  <Heart className="h-5 w-5 text-primary-500" />
+                  <Heart className="h-5 w-5 text-purple-500" />
                   Nossa diferença
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-sm text-gray-600">
-                    <Sparkles className="h-4 w-4 text-primary-500" />
+                    <Sparkles className="h-4 w-4 text-purple-500" />
                     Foco genuíno na comunidade
                   </li>
                   <li className="flex items-center gap-2 text-sm text-gray-600">
-                    <Sparkles className="h-4 w-4 text-primary-500" />
+                    <Sparkles className="h-4 w-4 text-purple-500" />
                     Sem anúncios invasivos
                   </li>
                   <li className="flex items-center gap-2 text-sm text-gray-600">
-                    <Sparkles className="h-4 w-4 text-primary-500" />
+                    <Sparkles className="h-4 w-4 text-purple-500" />
                     Curadoria de conteúdo humano
                   </li>
                   <li className="flex items-center gap-2 text-sm text-gray-600">
-                    <Sparkles className="h-4 w-4 text-primary-500" />
+                    <Sparkles className="h-4 w-4 text-purple-500" />
                     Suporte rápido e atencioso
                   </li>
                 </ul>
@@ -207,9 +203,8 @@ export default function FeaturesPage() {
             </div>
           </div>
 
-          {/* Call to Action */}
           <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-linear-to-r from-primary-600 to-primary-500 rounded-2xl p-8 text-white">
+            <div className="bg-linear-to-r from-purple-600 to-purple-500 rounded-2xl p-8 text-white">
               <PenTool className="h-10 w-10 mx-auto mb-3 opacity-90" />
               <h2 className="text-xl font-bold mb-2">Pronto para começar a escrever?</h2>
               <p className="text-white/90 mb-4">
@@ -217,7 +212,7 @@ export default function FeaturesPage() {
               </p>
               <a
                 href="https://app.lyrax.com/signup"
-                className="inline-flex items-center gap-2 bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Criar conta gratuita
                 <Sparkles className="h-4 w-4" />
@@ -231,7 +226,6 @@ export default function FeaturesPage() {
   )
 }
 
-// Componente FeatureCard
 function FeatureCard({ icon: Icon, title, description, color }: { 
   icon: any; 
   title: string; 
@@ -239,7 +233,7 @@ function FeatureCard({ icon: Icon, title, description, color }: {
   color: string 
 }) {
   const colorClasses = {
-    primary: "bg-primary-50 text-primary-600",
+    primary: "bg-purple-50 text-purple-600",
     blue: "bg-blue-50 text-blue-600",
     purple: "bg-purple-50 text-purple-600",
     red: "bg-red-50 text-red-600",

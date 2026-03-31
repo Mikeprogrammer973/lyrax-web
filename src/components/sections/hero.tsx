@@ -39,7 +39,7 @@ export function Hero() {
 
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button className='bg-blue-600 hover:bg-blue-700 text-white group' size="lg">
-              <Link href="https://app.lyrax.com" className="flex items-center gap-2">
+              <Link href="/auth/signup" className="flex items-center gap-2">
                 Começar a escrever
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>

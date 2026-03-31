@@ -213,7 +213,7 @@ export default function SupportPage() {
                     rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full rounded-lg border border-gray-200 px-4 py-2.5 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20"
+                    className="w-full rounded-lg border text-black border-gray-200 px-4 py-2.5 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20"
                     placeholder="Descreva sua dúvida ou problema em detalhes..."
                     required
                   />
@@ -244,7 +244,7 @@ export default function SupportPage() {
                 {status === 'error' && (
                   <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                     <p className="text-red-800 text-sm text-center">
-                      Erro ao enviar mensagem. Tente novamente ou entre em contato pelo email contato@lyraX.com
+                      Erro ao enviar mensagem. Tente novamente ou entre em contato pelo email technopro.net@gmail.com
                     </p>
                   </div>
                 )}
@@ -255,8 +255,8 @@ export default function SupportPage() {
           <div className="max-w-2xl mx-auto mt-8 text-center">
             <p className="text-sm text-gray-500">
               Ou entre em contato diretamente pelo email{' '}
-              <a href="mailto:contato@lyraX.com" className="text-purple-600 hover:underline">
-                contato@lyraX.com
+              <a href="mailto:technopro.net@gmail.com" className="text-purple-600 hover:underline">
+                technopro.net@gmail.com
               </a>
             </p>
             <p className="text-sm text-gray-500 mt-2">

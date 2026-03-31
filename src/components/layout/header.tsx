@@ -36,7 +36,7 @@ export function Header() {
               </Link>
             ))}
             <Button className='bg-blue-600 hover:bg-blue-700 text-white' variant="outline" size="sm">
-              <Link href="https://app.lyrax.com">Acessar App</Link>
+              <Link href="/access">Acessar App</Link>
             </Button>
             <Button className='bg-black hover:bg-gray-800 text-white' size="sm">
               <Link href="/auth/signup">Começar agora</Link>
@@ -67,7 +67,7 @@ export function Header() {
             ))}
             <div className="pt-4 space-y-2">
               <Button className='w-full bg-blue-600 hover:bg-blue-700 text-white' variant="outline" size="sm">
-                <Link href="https://app.lyrax.com">Acessar App</Link>
+                <Link href="/access">Acessar App</Link>
               </Button>
               <Button className='w-full bg-black hover:bg-gray-800 text-white' size="sm">
                 <Link href="/auth/signup">Começar agora</Link>

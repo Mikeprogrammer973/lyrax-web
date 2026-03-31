@@ -171,8 +171,8 @@ export default function PrivacyPage() {
                           Para exercer seus direitos ou tirar dúvidas sobre privacidade, entre em contato:
                         </p>
                         <div className="mt-3 space-y-1 text-sm text-purple-700">
-                          <p><strong>Encarregado de Dados (DPO):</strong> <a href="mailto:privacy@lyraX.com" className="hover:underline">privacy@lyraX.com</a></p>
-                          <p><strong>Email para contato:</strong> <a href="mailto:contato@lyraX.com" className="hover:underline">contato@lyraX.com</a></p>
+                          <p><strong>Encarregado de Dados (DPO):</strong> <a href="mailto:privacy@lyrax.com" className="hover:underline">privacy@lyrax.com</a></p>
+                          <p><strong>Email para contato:</strong> <a href="mailto:technopro.net@gmail.com" className="hover:underline">technopro.net@gmail.com</a></p>
                         </div>
                       </div>
                     </div>

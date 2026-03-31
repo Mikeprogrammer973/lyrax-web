@@ -1,4 +1,6 @@
+import { emailFactory, footer, header, templateService } from 'lyrax/lib/email/config'
 import { NextRequest, NextResponse } from 'next/server'
+import { ThemeType } from 'tzmail'
 import { z } from 'zod'
 
 
@@ -14,14 +16,49 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const { name, email, message, subject } = contactSchema.parse(body)
 
-    // Salvar no banco de dados (opcional)
-    // await supabase.from('contacts').insert({ name, email, message })
+    console.log('Contato recebido:', { name, email, message, subject })
 
-    // Enviar email para suporte
-    // tzmail
+    // email para suporte
+    emailFactory.sendEmail({
+      subject: subject || 'Nova mensagem de contato',
+      to: process.env.CONTACT_EMAIL!,
+      template: templateService.createTemplate(
+        ThemeType.MINIMAL,
+        "dark",
+        {
+          header,
+          body: {
+            title: `Nova mensagem de contato de ${name}`,
+            message
+          },
+          footer,
+          layout: 'full',
+          spacing: 'normal',
+          borderRadius: 'small'
+        }
+      )
+    })
 
-    // Enviar confirmação para o usuário
-    // tzmail
+    // confirmação para o usuário
+    emailFactory.sendEmail({
+      subject: 'Mensagem enviada com sucesso',
+      to: email,
+      template: templateService.createTemplate(
+        ThemeType.MONOKAI,
+        "dark",
+        {
+          header,
+          body: {
+            title: 'Obrigado por entrar em contato conosco!',
+            message: `Olá ${name},<br><br>Recebemos sua mensagem e nossa equipe de suporte entrará em contato com você em breve. Agradecemos por nos informar sobre suas dúvidas ou problemas.<br><br>Atenciosamente,<br>Equipe LyraX`
+          },
+          footer,
+          layout: 'full',
+          spacing: 'normal',
+          borderRadius: 'small'
+        }
+      )
+    })
 
     return NextResponse.json({ success: true })
   } catch (error) {

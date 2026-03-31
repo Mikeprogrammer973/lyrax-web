@@ -41,7 +41,7 @@ export function CTA() {
               size="lg" 
               className="bg-white text-purple-600 hover:bg-gray-100 group"
             >
-              <Link href="https://app.lyrax.com/signup" className="flex items-center gap-2">
+              <Link href="/auth/signup" className="flex items-center gap-2">
                 Começar a escrever
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>

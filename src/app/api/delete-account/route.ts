@@ -2,6 +2,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import supabaseAdmin from 'lyrax/lib/supabase/server'
+import { emailFactory, footer, header, templateService } from 'lyrax/lib/email/config'
+import { ThemeType } from 'tzmail'
 
 const deleteSchema = z.object({
   userId: z.string(),
@@ -17,7 +19,6 @@ export async function POST(request: NextRequest) {
     
     const { userId } = deleteSchema.parse(body)
 
-    // Verificar se o usuário existe
     const { data: user, error: userError } = await supabase
       .from('profiles')
       .select('*')
@@ -31,7 +32,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Deletar usuário do Auth
     const { error: authError } = await supabase.auth.admin.deleteUser(userId)
 
     if (authError) {
@@ -43,7 +43,25 @@ export async function POST(request: NextRequest) {
     }
 
     // Enviar email de confirmação
-    // tzmail
+    emailFactory.sendEmail({
+      subject: 'Mensagem enviada com sucesso',
+      to: user.email,
+      template: templateService.createTemplate(
+        ThemeType.MONOKAI,
+        "dark",
+        {
+          header,
+          body: {
+            title: 'Sua conta foi deletada',
+            message: `Olá ${user.name},<br><br>Sua conta foi deletada com sucesso.<br><br>Atenciosamente,<br>Equipe LyraX`
+          },
+          footer,
+          layout: 'full',
+          spacing: 'normal',
+          borderRadius: 'small'
+        }
+      )
+    })
 
     return NextResponse.json({ success: true })
   } catch (error) {
