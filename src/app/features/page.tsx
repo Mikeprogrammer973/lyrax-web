@@ -211,7 +211,7 @@ export default function FeaturesPage() {
                 Junte-se a milhares de escritores e leitores que já fazem parte do Lyrax.
               </p>
               <a
-                href="https://app.lyrax.com/signup"
+                href="/auth/signup"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Criar conta gratuita
