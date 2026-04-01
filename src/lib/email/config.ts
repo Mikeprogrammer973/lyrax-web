@@ -30,13 +30,14 @@ const header: IHeaderConfig = {
 const footer: IFooterConfig = {
     show: true,
     links: [
-    { text: 'Termos', url: 'https://lyrax.com/terms' },
-    { text: 'Privacidade', url: 'https://lyrax.com/privacy' }
+        { text: 'Termos', url: 'https://lyrax-web.vercel.app/terms' },
+        { text: 'Privacidade', url: 'https://lyrax-web.vercel.app/privacy' },
+        { text: 'Ajuda', url: 'https://lyrax-web.vercel.app/support' }
     ],
     socialLinks: [
-    { platform: 'facebook', url: 'https://twitter.com/lyraxapp' },
-    { platform: 'github', url: 'https://github.com/lyraxapp' },
-    { platform: 'linkedin', url: 'https://linkedin.com/company/lyrax' }
+        { platform: 'facebook', url: 'https://twitter.com/lyraxapp' },
+        { platform: 'github', url: 'https://github.com/lyraxapp' },
+        { platform: 'linkedin', url: 'https://linkedin.com/company/lyrax' }
     ],
     copyrightText: '© LyraX. Todos os direitos reservados.'
 }
