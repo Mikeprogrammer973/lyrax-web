@@ -22,7 +22,7 @@ export default function PricingPage() {
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Acreditamos que a criatividade não deve ter barreiras. Por isso, todas as funcionalidades 
-              da LyraX são completamente gratuitas. Sem pegadinhas, sem planos pagos.
+              do LyraX são completamente gratuitas. Sem pegadinhas, sem planos pagos.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function PricingPage() {
             <div className="bg-linear-to-r from-purple-50 to-purple-100/50 rounded-2xl p-8">
               <div className="text-center mb-6">
                 <Heart className="h-10 w-10 text-purple-600 mx-auto mb-3" />
-                <h2 className="text-2xl font-bold text-gray-900">Por que a LyraX é gratuito?</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Por que o LyraX é gratuito?</h2>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -106,7 +106,7 @@ export default function PricingPage() {
             <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
               <Star className="h-8 w-8 text-yellow-400 mx-auto mb-3 fill-yellow-400" />
               <p className="text-gray-600 italic mb-4">
-                &quot;É incrível encontrar uma plataforma tão completa e gratuita. A LyraX me deu a liberdade 
+                &quot;É incrível encontrar uma plataforma tão completa e gratuita. O LyraX me deu a liberdade 
                 de publicar sem me preocupar com custos.&quot;
               </p>
               <div className="flex items-center justify-center gap-2">
@@ -127,12 +127,12 @@ export default function PricingPage() {
             </h2>
             <div className="space-y-4">
               <FaqItem 
-                question="A LyraX realmente será sempre gratuito?"
+                question="O LyraX realmente será sempre gratuito?"
                 answer="Sim! Nosso compromisso é manter a plataforma gratuita para todos os usuários. Acreditamos que a criatividade não deve ter barreiras financeiras."
               />
               <FaqItem 
                 question="Como vocês se mantêm sem cobrar?"
-                answer="Atualmente, mantemos a plataforma com recursos próprios e doações voluntárias de usuários que desejam apoiar o projeto. No futuro, podemos oferecer recursos opcionais de suporte, mas o core da LyraX continuará gratuito."
+                answer="Atualmente, mantemos a plataforma com recursos próprios e doações voluntárias de usuários que desejam apoiar o projeto. No futuro, podemos oferecer recursos opcionais de suporte, mas o core do LyraX continuará gratuito."
               />
               <FaqItem 
                 question="Existe limite de publicações?"

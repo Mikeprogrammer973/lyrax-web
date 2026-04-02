@@ -43,7 +43,7 @@ export default function PrivacyPage() {
                       Compromisso com sua privacidade
                     </h2>
                     <p className="text-blue-800 leading-relaxed">
-                      Na LyraX, valorizamos sua privacidade e estamos comprometidos em proteger seus dados pessoais. 
+                      No LyraX, valorizamos sua privacidade e estamos comprometidos em proteger seus dados pessoais. 
                       Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações.
                     </p>
                   </div>
@@ -145,7 +145,7 @@ export default function PrivacyPage() {
                     title="8. Dados de Crianças e Adolescentes"
                   >
                     <p>
-                      A LyraX não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente 
+                      O LyraX não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente 
                       dados de crianças. Se você é responsável e acredita que uma criança forneceu dados, 
                       entre em contato para que possamos removê-los.
                     </p>

@@ -78,7 +78,7 @@ export default function AboutPage() {
               <Rocket className="h-12 w-12 mx-auto mb-4 opacity-90" />
               <h2 className="text-2xl font-bold mb-3">Faça parte da nossa história</h2>
               <p className="text-white/90 mb-6">
-                Junte-se a milhares de escritores e leitores que já descobriram a LyraX.
+                Junte-se a milhares de escritores e leitores que já descobriram o LyraX.
               </p>
               <a
                 href="/auth/signup"

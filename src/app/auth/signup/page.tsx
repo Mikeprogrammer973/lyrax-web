@@ -138,7 +138,7 @@ export default function SignupPage() {
                 Crie sua conta
               </h1>
               <p className="text-gray-600">
-                Comece sua jornada literária na LyraX
+                Comece sua jornada literária no LyraX
               </p>
             </div>
 

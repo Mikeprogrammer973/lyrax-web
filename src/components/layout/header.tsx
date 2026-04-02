@@ -11,7 +11,8 @@ export function Header() {
   const navigation = [
     { name: 'Recursos', href: '/features' },
     { name: 'Preços', href: '/pricing' },
-    { name: 'Sobre', href: '/about' }
+    { name: 'Sobre', href: '/about' },
+    { name: 'Doar', href: '/donate' }
   ]
 
   return (

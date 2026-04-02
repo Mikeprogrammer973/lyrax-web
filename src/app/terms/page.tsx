@@ -72,21 +72,21 @@ export default function TermsPage() {
                 <div className="prose prose-gray max-w-none">
                   <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-8">
                     <p className="text-blue-800 leading-relaxed mb-0">
-                      Bem-vindo à LyraX! Ao utilizar nossa plataforma, você concorda com estes Termos de Uso. 
+                      Bem-vindo ao LyraX! Ao utilizar nossa plataforma, você concorda com estes Termos de Uso. 
                       Leia-os cuidadosamente antes de criar sua conta ou usar nossos serviços.
                     </p>
                   </div>
 
                   <Section id="section-1" number="1" title="Aceitação dos Termos">
                     <p>
-                      Ao acessar ou usar a LyraX, você concorda em cumprir estes Termos de Uso. 
+                      Ao acessar ou usar o LyraX, você concorda em cumprir estes Termos de Uso. 
                       Se você não concordar com alguma parte destes termos, não poderá utilizar nossos serviços.
                     </p>
                   </Section>
 
                   <Section id="section-2" number="2" title="Cadastro e Conta">
                     <p>
-                      Para utilizar certas funcionalidades da LyraX, você precisa criar uma conta. 
+                      Para utilizar certas funcionalidades do LyraX, você precisa criar uma conta. 
                       Você é responsável por manter a confidencialidade de suas credenciais e por todas as 
                       atividades realizadas em sua conta. Informações fornecidas devem ser verdadeiras, 
                       precisas e atualizadas.
@@ -101,7 +101,7 @@ export default function TermsPage() {
                   <Section id="section-3" number="3" title="Conteúdo do Usuário">
                     <p>
                       Você mantém todos os direitos sobre os textos, poemas, histórias e demais conteúdos 
-                      que publicar na LyraX. Ao publicar, você concede à LyraX uma licença não exclusiva 
+                      que publicar no LyraX. Ao publicar, você concede ao LyraX uma licença não exclusiva 
                       para hospedar, exibir e distribuir seu conteúdo dentro da plataforma.
                     </p>
                     <p className="mt-4">
@@ -112,7 +112,7 @@ export default function TermsPage() {
                   </Section>
 
                   <Section id="section-4" number="4" title="Conduta do Usuário">
-                    <p>Você concorda em usar a LyraX de forma ética e respeitosa. São proibidas práticas como:</p>
+                    <p>Você concorda em usar o LyraX de forma ética e respeitosa. São proibidas práticas como:</p>
                     <ul className="list-disc pl-6 mt-3 space-y-2">
                       <li>Publicar conteúdo ofensivo, discriminatório ou ilegal</li>
                       <li>Assediar, intimidar ou perseguir outros usuários</li>
@@ -124,7 +124,7 @@ export default function TermsPage() {
 
                   <Section id="section-5" number="5" title="Propriedade Intelectual">
                     <p>
-                      A LyraX e seus elementos visuais, marca, logotipo e código são de nossa propriedade 
+                      O LyraX e seus elementos visuais, marca, logotipo e código são de nossa propriedade 
                       ou licenciados para nós. Você não pode copiar, modificar ou distribuir qualquer parte 
                       da plataforma sem autorização expressa.
                     </p>
@@ -148,7 +148,7 @@ export default function TermsPage() {
 
                   <Section id="section-8" number="8" title="Limitação de Responsabilidade">
                     <p>
-                      A LyraX é fornecido &quot;como está&quot;, sem garantias de qualquer tipo. Não nos responsabilizamos 
+                      O LyraX é fornecido &quot;como está&quot;, sem garantias de qualquer tipo. Não nos responsabilizamos 
                       por danos indiretos, perda de dados ou lucros cessantes decorrentes do uso da plataforma.
                     </p>
                   </Section>

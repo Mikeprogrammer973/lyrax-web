@@ -61,7 +61,7 @@ export default function AccessPage() {
                 <span className="text-sm font-medium text-purple-600">Acesso ao App</span>
               </div>
               <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                Acesse a LyraX no seu celular
+                Acesse o LyraX no seu celular
               </h1>
               <p className="text-lg text-gray-600">
                 Escaneie o QR Code ou clique no botão para baixar o app

@@ -145,7 +145,7 @@ export default function FeaturesPage() {
 
           <div className="max-w-4xl mx-auto mb-16">
             <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
-              Por que escolher a LyraX?
+              Por que escolher o LyraX?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">

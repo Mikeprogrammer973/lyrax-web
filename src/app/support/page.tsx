@@ -57,7 +57,7 @@ export default function SupportPage() {
 
   const faqs = [
     {
-      question: 'Como começar a escrever na LyraX?',
+      question: 'Como começar a escrever no LyraX?',
       answer: 'Basta criar uma conta gratuita e acessar o editor. Você pode publicar poemas, histórias, crônicas ou qualquer outro formato literário. O editor oferece formatação rica e opções de estilo personalizadas.',
       icon: Edit,
     },
@@ -114,7 +114,7 @@ export default function SupportPage() {
             <HelpCard 
               icon={BookOpen}
               title="Guia do Usuário"
-              description="Tudo que você precisa saber para começar a usar a LyraX"
+              description="Tudo que você precisa saber para começar a usar o LyraX"
               link="#"
             />
             <HelpCard 
