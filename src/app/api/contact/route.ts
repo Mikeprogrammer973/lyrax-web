@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
     const { name, email, message, subject } = contactSchema.parse(body)
 
     // email para suporte
-    emailFactory.sendEmail({
+    await emailFactory.sendEmail({
       subject: subject || 'Nova mensagem de contato',
       to: process.env.CONTACT_EMAIL!,
       template: templateService.createTemplate(
@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     })
 
     // confirmação para o usuário
-    emailFactory.sendEmail({
+    await emailFactory.sendEmail({
       subject: 'Mensagem enviada com sucesso',
       to: email,
       template: templateService.createTemplate(
