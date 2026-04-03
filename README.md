@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📱 LyraX - Onde as palavras ganham vida
 
-## Getting Started
+[![Flutter](https://img.shields.io/badge/Flutter-3.16-02569B?style=flat-square&logo=flutter)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.2-0175C2?style=flat-square&logo=dart)](https://dart.dev)
+[![Supabase](https://img.shields.io/badge/Supabase-2.39-3FCF8E?style=flat-square&logo=supabase)](https://supabase.com)
+[![Firebase](https://img.shields.io/badge/Firebase-10.0-FFCA28?style=flat-square&logo=firebase)](https://firebase.google.com)
+[![Stripe](https://img.shields.io/badge/Stripe-Integration-008CDD?style=flat-square&logo=stripe)](https://stripe.com)
 
-First, run the development server:
+> Uma plataforma de escrita criativa que conecta escritores e leitores apaixonados por literatura.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📱 Sobre o App
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O LyraX é uma plataforma **100% gratuita** que permite escritores publicarem seus textos (poemas, histórias, crônicas, etc.) e leitores descobrirem novos talentos. Acreditamos que a criatividade não deve ter barreiras financeiras.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎯 Missão
 
-## Learn More
+Democratizar o acesso à literatura, conectando escritores a leitores apaixonados e proporcionando um espaço onde a criatividade floresce sem limites.
 
-To learn more about Next.js, take a look at the following resources:
+### 📊 Números
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 👥 **+10k** usuários ativos
+- ✍️ **+500** escritores
+- 📖 **+2k** publicações
+- 🌍 **+5** países
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Funcionalidades
 
-## Deploy on Vercel
+### Para Escritores
+- ✏️ **Editor poderoso** - Formatação rica, personalização de fonte e tamanho
+- 📊 **Estatísticas** - Acompanhe visualizações, curtidas e engajamento
+- 🔒 **Privacidade controlada** - Escolha quem pode ver seus textos
+- 📱 **Notificações em tempo real** - Saiba quando alguém interage com seu conteúdo
+- 💾 **Rascunhos automáticos** - Nunca perca seus escritos
+- 🏷️ **Tags e categorias** - Organize seus textos facilmente
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Para Leitores
+- 🔍 **Descoberta de conteúdo** - Explore novos escritores e textos
+- 💬 **Comentários** - Interaja com autores e outros leitores
+- ❤️ **Curtidas e salvos** - Crie sua biblioteca pessoal
+- 📚 **Coleções** - Organize seus textos favoritos
+- 🔔 **Notificações** - Receba atualizações dos seus autores favoritos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Geral
+- 🎨 **Design moderno** - Interface limpa e intuitiva
+- 🌙 **Tema escuro** - Para escrever confortavelmente a qualquer hora
+- 🔔 **Push notifications** - Nunca perca uma interação
+- 🔐 **Segurança** - Dados protegidos com as melhores práticas
+- 🚀 **Performance** - App rápido e responsivo
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- **Flutter 3.16** - Framework multiplataforma
+- **Provider** - Gerenciamento de estado
+- **Google Fonts** - Tipografia personalizada
+- **Animations** - Transições suaves
+- **Fl Chart** - Gráficos e estatísticas
+
+### Backend
+- **Supabase** - Autenticação, banco de dados e realtime
+- **Firebase Cloud Messaging** - Notificações push
+- **Firebase Auth** - Autenticação MFA
+
+### Pagamentos
+- **Stripe** - Processamento de doações
+
+### Utilitários
+- **Image Picker** - Upload de imagens
+- **Share Plus** - Compartilhamento de conteúdo
+- **URL Launcher** - Deep links
+- **Local Notifications** - Notificações locais
