@@ -1,7 +1,8 @@
 import { emailFactory, footer, header, templateService } from 'lyrax/lib/email/config'
+import { supabase } from 'lyrax/lib/supabase/client'
 import { NextRequest, NextResponse } from 'next/server'
 import { ThemeType } from 'tzmail'
-import { z } from 'zod'
+import {  z } from 'zod'
 
 
 const contactSchema = z.object({
@@ -15,6 +16,9 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const { name, email, message, subject } = contactSchema.parse(body)
+
+    if((await supabase.from('profile').select('id').eq('email', email)).data?.length === 0) 
+      return NextResponse.json({success: false, error: 'Usuário não encontrado'}, {status: 404})
 
     // email para suporte
     await emailFactory.sendEmail({
