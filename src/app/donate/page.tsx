@@ -112,7 +112,7 @@ export default function DonatePage() {
                   <h2 className="text-xl font-semibold text-gray-900">Faça sua doação</h2>
                 </div>
                 <p className="text-gray-600 text-sm mt-2">
-                  Escolha o valor que deseja contribuir para manter o LyraX viva e gratuita.
+                  Escolha o valor que deseja contribuir para manter o LyraX vivo e gratuito.
                 </p>
               </div>
 
