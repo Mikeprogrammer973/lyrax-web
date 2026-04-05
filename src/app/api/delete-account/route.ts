@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
 
     // Enviar email de confirmação
     emailFactory.sendEmail({
-      subject: 'Mensagem enviada com sucesso',
+      subject: 'Conta deletada com sucesso',
       to: user.email,
       template: templateService.createTemplate(
         ThemeType.MONOKAI,
