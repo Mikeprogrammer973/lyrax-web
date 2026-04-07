@@ -16,16 +16,15 @@ export default function AccessPage() {
   const [appUrl] = useState('https://play.google.com/store/apps/details?id=com.lyrax.app')
   const [deepLink] = useState('lyrax://auth/callback')
 
-  //const params = useSearchParams()
-
-  /*useEffect(() => {
-    const post = params.get('post')
-    if (post) {
-      //window.location.href = `lyrax://post/${post}`
-    }
-  }, [params])*/
+  const params = useSearchParams()
 
   useEffect(() => {
+
+    const post = params.get('post')
+    if (post) {
+      window.location.href = `lyrax://post/${post}`
+    }
+
     QRCode.toDataURL(appUrl, {
       width: 200,
       margin: 2,
@@ -49,7 +48,7 @@ export default function AccessPage() {
     }, 1000)
 
     return () => clearInterval(timer)
-  }, [appUrl, deepLink])
+  }, [appUrl, deepLink, params])
 
   const handleDownload = () => {
     window.open(appUrl, '_blank')
