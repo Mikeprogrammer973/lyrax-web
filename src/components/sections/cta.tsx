@@ -9,7 +9,7 @@ import { Button } from '../ui/button'
 export function CTA() {
   return (
     <section className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-linear-to-r from-primary-600 to-primary-500" />
+      <div className="absolute inset-0 bg-linear-to-r from-purple-600 to-purple-500" />
       
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-size-[40px_40px]" />
       

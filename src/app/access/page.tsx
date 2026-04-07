@@ -8,12 +8,22 @@ import QRCode from 'qrcode'
 import { Header } from 'lyrax/components/layout/header'
 import { Button } from 'lyrax/components/ui/button'
 import { Footer } from 'lyrax/components/layout/footer'
+import { useSearchParams } from 'next/navigation'
 
 export default function AccessPage() {
   const [countdown, setCountdown] = useState(30)
   const [qrCodeUrl, setQrCodeUrl] = useState('')
   const [appUrl] = useState('https://play.google.com/store/apps/details?id=com.lyrax.app')
   const [deepLink] = useState('lyrax://auth/callback')
+
+  const params = useSearchParams()
+
+  useEffect(() => {
+    const post = params.get('post')
+    if (post) {
+      window.location.href = `lyrax://post/${post}`
+    }
+  }, [params])
 
   useEffect(() => {
     QRCode.toDataURL(appUrl, {
@@ -112,7 +122,7 @@ export default function AccessPage() {
                   Baixar agora
                 </Button>
                 <p className="text-xs text-gray-400">
-                  Versão 1.0.0 • Tamanho aproximado: 25 MB
+                  Versão 1.0.0 • Tamanho aproximado: 102 MB
                 </p>
               </div>
             </div>
@@ -166,7 +176,7 @@ export default function AccessPage() {
               <Button
                 variant="outline"
                 onClick={handleRedirectNow}
-                className="mt-2"
+                className="mt-2 border border-blue-500 text-blue-500"
               >
                 Abrir agora
                 <ArrowRight className="ml-2 h-4 w-4" />
