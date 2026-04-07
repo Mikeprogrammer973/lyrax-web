@@ -8,7 +8,6 @@ import QRCode from 'qrcode'
 import { Header } from 'lyrax/components/layout/header'
 import { Button } from 'lyrax/components/ui/button'
 import { Footer } from 'lyrax/components/layout/footer'
-import { useSearchParams } from 'next/navigation'
 
 export default function AccessPage() {
   const [countdown, setCountdown] = useState(30)
@@ -16,13 +15,14 @@ export default function AccessPage() {
   const [appUrl] = useState('https://play.google.com/store/apps/details?id=com.lyrax.app')
   const [deepLink] = useState('lyrax://auth/callback')
 
-  const params = useSearchParams()
-
   useEffect(() => {
 
+   const params = new URLSearchParams(window.location.search)
     const post = params.get('post')
+    
     if (post) {
       window.location.href = `lyrax://post/${post}`
+      return
     }
 
     QRCode.toDataURL(appUrl, {
@@ -48,7 +48,7 @@ export default function AccessPage() {
     }, 1000)
 
     return () => clearInterval(timer)
-  }, [appUrl, deepLink, params])
+  }, [appUrl, deepLink])
 
   const handleDownload = () => {
     window.open(appUrl, '_blank')
