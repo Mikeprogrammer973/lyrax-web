@@ -18,12 +18,12 @@ export default function AccessPage() {
 
   const params = useSearchParams()
 
-  useEffect(() => {
+  /*useEffect(() => {
     const post = params.get('post')
     if (post) {
       //window.location.href = `lyrax://post/${post}`
     }
-  }, [params])
+  }, [params])*/
 
   useEffect(() => {
     QRCode.toDataURL(appUrl, {
