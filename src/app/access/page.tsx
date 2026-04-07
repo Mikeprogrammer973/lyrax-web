@@ -21,7 +21,7 @@ export default function AccessPage() {
   useEffect(() => {
     const post = params.get('post')
     if (post) {
-      window.location.href = `lyrax://post/${post}`
+      //window.location.href = `lyrax://post/${post}`
     }
   }, [params])
 
