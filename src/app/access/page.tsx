@@ -11,7 +11,7 @@ import { Button } from 'lyrax/components/ui/button'
 import { Footer } from 'lyrax/components/layout/footer'
 
 export default function AccessPage() {
-  const [countdown, setCountdown] = useState(30)
+  const [countdown, setCountdown] = useState(3)
   const [qrCodeUrl, setQrCodeUrl] = useState('')
   const [appUrl] = useState('https://play.google.com/store/apps/details?id=com.lyrax.app')
   const [deepLink, setDeepLink] = useState('lyrax://auth/callback')
@@ -71,7 +71,7 @@ export default function AccessPage() {
 
   const handleResumeRedirect = () => {
     setAutoRedirect(true)
-    setCountdown(30)
+    setCountdown(3)
   }
 
   return (
