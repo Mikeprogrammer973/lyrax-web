@@ -216,7 +216,7 @@ export default function AccessPage() {
                           strokeWidth="4"
                           fill="none"
                           strokeDasharray={2 * Math.PI * 42}
-                          strokeDashoffset={2 * Math.PI * 42 * (1 - countdown / 30)}
+                          strokeDashoffset={2 * Math.PI * 42 * (1 - countdown / 3)}
                           className="text-purple-600 transition-all duration-1000"
                         />
                       </svg>

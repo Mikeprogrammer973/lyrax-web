@@ -35,9 +35,9 @@ const footer: IFooterConfig = {
         { text: 'Ajuda', url: 'https://lyrax-web.vercel.app/support' }
     ],
     socialLinks: [
-        { platform: 'facebook', url: 'https://twitter.com/lyraxapp' },
-        { platform: 'github', url: 'https://github.com/lyraxapp' },
-        { platform: 'linkedin', url: 'https://linkedin.com/company/lyrax' }
+        { platform: 'twitter', url: 'https://x.com/lyrax_com' },
+        { platform: 'instagram', url: 'https://www.instagram.com/lyrax_com?igsh=NnJwaDl0bHhud2xu' },
+        { platform: 'youtube', url: 'https://www.youtube.com/@lyrax_com' }
     ],
     copyrightText: '© LyraX. Todos os direitos reservados.'
 }

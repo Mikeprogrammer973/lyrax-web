@@ -20,9 +20,6 @@ export default function TermsPage() {
             <p className="text-lg text-gray-600">
               Leia atentamente os termos e condições que regem o uso da plataforma LyraX.
             </p>
-            <p className="text-sm text-gray-400 mt-4">
-              Última atualização: {new Date().toLocaleDateString('pt-BR')}
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
@@ -31,7 +28,7 @@ export default function TermsPage() {
                 <FileText className="h-6 w-6 text-purple-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Versão Atual</h3>
-              <p className="text-sm text-gray-500">v2.0 • Março 2026</p>
+              <p className="text-sm text-gray-500">v1.0 • Março 2026</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
               <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4">

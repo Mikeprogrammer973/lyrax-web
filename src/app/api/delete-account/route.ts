@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Enviar email de confirmação
+    // send email de confirmação
     emailFactory.sendEmail({
       subject: 'Conta deletada com sucesso',
       to: user.email,

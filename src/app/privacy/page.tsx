@@ -21,9 +21,6 @@ export default function PrivacyPage() {
             <p className="text-lg text-gray-600">
               Seus dados são protegidos. Saiba como coletamos, usamos e protegemos suas informações.
             </p>
-            <p className="text-sm text-gray-400 mt-4">
-              Última atualização: {new Date().toLocaleDateString('pt-BR')}
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
@@ -157,8 +154,7 @@ export default function PrivacyPage() {
                   >
                     <p>
                       Podemos atualizar esta Política periodicamente. Alterações significativas serão comunicadas 
-                      através da plataforma ou por email. A versão atualizada será publicada nesta página com a 
-                      data de revisão.
+                      através da plataforma ou por email. A versão atualizada será publicada nesta página.
                     </p>
                   </PrivacySection>
 
