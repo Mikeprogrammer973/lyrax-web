@@ -12,7 +12,7 @@ const deleteSchema = z.object({
   reason: z.string().optional(),
 })
 
-export async function POST(request: NextRequest) {
+export async function DELETE(request: NextRequest) {
   try {
     const supabase = supabaseAdmin
     const body = await request.json()
