@@ -271,7 +271,7 @@ export default function AccessPage() {
                     </Button>
                     <Button
                       variant="outline"
-                      onClick={handleRedirectNow}
+                      onClick={() => handleRedirectNow()}
                       className="border-blue-500 text-blue-500"
                     >
                       Abrir agora
@@ -288,7 +288,7 @@ export default function AccessPage() {
             <div className="mt-8 text-center">
               <p className="text-sm text-gray-500">
                 {postId ? 'Não tem o app instalado?' : 'Já tem o aplicativo instalado?'}{' '}
-                <a href={deepLink} className="text-purple-600 hover:underline">
+                <a href={postId ? appUrl : deepLink} className="text-purple-600 hover:underline">
                   {postId ? 'Baixar o app' : 'Abrir agora'}
                 </a>
               </p>
