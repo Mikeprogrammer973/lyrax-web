@@ -61,8 +61,8 @@ export default function AccessPage() {
     return () => clearInterval(timer)
   }, [deepLink, autoRedirect])
 
-  const handleRedirectNow = () => {
-    window.location.href = postId ? deepLink : appUrl
+  const handleRedirectNow = (tts=false) => {
+    window.location.href = !tts ? deepLink : appUrl
   }
 
   const handleCancelRedirect = () => {
@@ -161,7 +161,7 @@ export default function AccessPage() {
                 </p>
                 <Button 
                   className="w-full mb-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center"
-                  onClick={handleRedirectNow}
+                  onClick={() => handleRedirectNow(postId && true)}
                 >
                   {postId ? (
                     <>
