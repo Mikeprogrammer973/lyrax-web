@@ -62,7 +62,7 @@ export default function AccessPage() {
   }, [deepLink, autoRedirect])
 
   const handleRedirectNow = () => {
-    window.location.href = deepLink
+    window.location.href = postId ? deepLink : appUrl
   }
 
   const handleCancelRedirect = () => {
