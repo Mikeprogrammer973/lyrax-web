@@ -161,7 +161,7 @@ export default function AccessPage() {
                 </p>
                 <Button 
                   className="w-full mb-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center"
-                  onClick={() => handleRedirectNow(postId ? false : true)}
+                  onClick={() => handleRedirectNow(postId && true)}
                 >
                   {postId ? (
                     <>
@@ -237,7 +237,7 @@ export default function AccessPage() {
                   <div className="flex gap-3 justify-center">
                     <Button
                       variant="outline"
-                      onClick={handleRedirectNow}
+                      onClick={() => handleRedirectNow()}
                       className="border-blue-500 text-blue-500"
                     >
                       Abrir agora
