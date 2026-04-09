@@ -43,7 +43,7 @@ export async function DELETE(request: NextRequest) {
     }
 
     // send email de confirmação
-    emailFactory.sendEmail({
+    await emailFactory.sendEmail({
       subject: 'Conta deletada com sucesso',
       to: user.email,
       template: templateService.createTemplate(
