@@ -177,7 +177,7 @@ export default function AccessPage() {
                 </Button>
                 {!postId && (
                   <p className="text-xs text-gray-400">
-                    Versão 1.0.0 • Tamanho aproximado: 95 MB
+                    Versão 1.0.0 • Tamanho aproximado: 40 MB
                   </p>
                 )}
               </div>
