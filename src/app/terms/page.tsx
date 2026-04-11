@@ -1,5 +1,4 @@
-
-import { Shield, FileText, Users, Clock, Mail } from 'lucide-react'
+import { Shield, FileText, Users, Clock, Mail, BabyIcon, TriangleAlert } from 'lucide-react'
 import { Footer } from 'lyrax/components/layout/footer';
 import { Header } from 'lyrax/components/layout/header';
 
@@ -52,14 +51,14 @@ export default function TermsPage() {
               <div className="bg-linear-to-r from-purple-50 to-purple-100/50 p-6 border-b border-purple-100">
                 <h2 className="text-lg font-semibold text-purple-900 mb-3">Índice</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((num) => (
                     <a
                       key={num}
                       href={`#section-${num}`}
                       className="text-sm text-purple-700 hover:text-purple-900 hover:underline"
                     >
                       {num}. {['Aceitação', 'Cadastro', 'Conteúdo', 'Conduta', 'Propriedade', 
-                        'Modificações', 'Rescisão', 'Responsabilidade', 'Legislação', 'Alterações'][num-1]}
+                        'Modificações', 'Rescisão', 'Responsabilidade', 'Legislação', 'Alterações', 'Segurança Infantil'][num-1]}
                     </a>
                   ))}
                 </div>
@@ -164,15 +163,85 @@ export default function TermsPage() {
                     </p>
                   </Section>
 
+                  <Section id="section-11" number="11" title="Segurança Infantil e Proteção contra CSAE">
+                    <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg mb-4">
+                      <p className="text-red-700 font-semibold mb-2 flex items-center gap-2">
+                        <TriangleAlert className="h-4 w-4" />
+                        Nosso Compromisso Absoluto
+                      </p>
+                      <p className="text-red-600 text-sm">
+                        O LyraX tem compromisso ZERO TOLERÂNCIA com qualquer forma de abuso ou exploração sexual infantil.
+                      </p>
+                    </div>
+
+                    <h3 className="font-semibold text-gray-800 mt-4 mb-2">Proibições Estritas</h3>
+                    <p>É estritamente proibido em nossa plataforma:</p>
+                    <ul className="list-disc pl-6 mt-2 space-y-1">
+                      <li>Qualquer conteúdo que explore, abuse ou coloque crianças em risco</li>
+                      <li>Material de abuso sexual infantil (CSAM - Child Sexual Abuse Material)</li>
+                      <li>Grooming, sextorsão ou qualquer forma de aliciamento de menores</li>
+                      <li>Compartilhamento de informações pessoais de menores com intenção maliciosa</li>
+                      <li>Qualquer interação sexualmente sugestiva envolvendo menores</li>
+                      <li>Links ou referências a conteúdo explícito envolvendo menores</li>
+                    </ul>
+
+                    <h3 className="font-semibold text-gray-800 mt-4 mb-2">Medidas de Moderação</h3>
+                    <p>Tomamos as seguintes ações imediatas:</p>
+                    <ul className="list-disc pl-6 mt-2 space-y-1">
+                      <li>✅ Remoção imediata de qualquer conteúdo identificado como CSAE</li>
+                      <li>✅ Suspensão permanente da conta de usuários que violem esta política</li>
+                      <li>✅ Reporte às autoridades competentes (NCMEC e Polícia Federal)</li>
+                      <li>✅ Preservação de evidências para investigação criminal</li>
+                      <li>✅ Monitoramento ativo de padrões suspeitos</li>
+                    </ul>
+
+                    <h3 className="font-semibold text-gray-800 mt-4 mb-2">Canal de Denúncia</h3>
+                    <p>Usuários podem reportar conteúdo suspeito através de:</p>
+                    <ul className="list-disc pl-6 mt-2 space-y-1">
+                      <li>📱 <strong>No aplicativo:</strong> Botão &quot;Reportar&quot; disponível em cada publicação e comentário</li>
+                      <li>📧 <strong>E-mail exclusivo:</strong> <a href="mailto:technopro.net@gmail.com" className="text-purple-600 hover:underline">csae@lyrax.com</a></li>
+                      <li>🌐 <strong>Formulário Web:</strong> <a href="https://lyrax-web.vercel.app/support">lyrax-web.vercel.app/support</a></li>
+                    </ul>
+
+                    <h3 className="font-semibold text-gray-800 mt-4 mb-2">Contato para Assuntos de Segurança Infantil</h3>
+                    <p>Para notificações sobre CSAE, entre em contato com nosso Encarregado Designado:</p>
+                    <ul className="list-disc pl-6 mt-2 space-y-1">
+                      <li><strong>E-mail:</strong> <a href="mailto:technopro.net@gmail.com" className="text-purple-600 hover:underline">csae@lyrax.com</a></li>
+                      <li><strong>Tempo de resposta:</strong> 24 horas</li>
+                      <li><strong>Disponibilidade:</strong> 24/7 para emergências</li>
+                    </ul>
+
+                    <h3 className="font-semibold text-gray-800 mt-4 mb-2">Conformidade Legal</h3>
+                    <p>O LyraX está em conformidade com:</p>
+                    <ul className="list-disc pl-6 mt-2 space-y-1">
+                      <li>📜 Lei 13.709/2018 (LGPD - Proteção de Dados)</li>
+                      <li>📜 Lei 13.431/2017 (Proteção de crianças e adolescentes contra violência)</li>
+                      <li>📜 Estatuto da Criança e do Adolescente (ECA)</li>
+                      <li>📜 Diretrizes de Segurança Infantil do Google Play</li>
+                      <li>📜 Convenção Internacional sobre os Direitos da Criança (ONU)</li>
+                    </ul>
+
+                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-4">
+                      <p className="text-yellow-800 text-sm flex items-start gap-2">
+                        <BabyIcon className="h-5 w-5 shrink-0 mt-0.5" />
+                        <span>
+                          <strong>⚠️ Emergência:</strong> Se você ou alguém que você conhece está em situação de risco iminente, 
+                          entre em contato imediatamente com o <strong>Disque 100</strong> (Direitos Humanos) ou a 
+                          <strong> Polícia Federal (194)</strong>.
+                        </span>
+                      </p>
+                    </div>
+                  </Section>
+
                   <div className="mt-12 p-6 bg-linear-to-r from-purple-50 to-purple-100/50 rounded-xl">
                     <div className="flex items-start gap-4">
                       <Mail className="h-6 w-6 text-purple-600 shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-purple-900 mb-2">Dúvidas?</h3>
                         <p className="text-purple-800 text-sm">
-                          Em caso de dúvidas sobre estes Termos, entre em contato conosco através do email{' '}
+                          Em caso de dúvidas sobre estes Termos ou sobre nossas políticas de segurança infantil, entre em contato conosco através do email{' '}
                           <a href="mailto:technopro.net@gmail.com" className="underline font-medium hover:text-purple-900">
-                            technopro.net@gmail.com
+                            contato@lyrax.com
                           </a>
                         </p>
                       </div>
