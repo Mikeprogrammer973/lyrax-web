@@ -63,7 +63,7 @@ export default function SupportPage() {
     },
     {
       question: 'Como posso excluir minha conta?',
-      answer: 'Você pode excluir sua conta permanentemente acessando Configurações > Privacidade & Segurança > Excluir conta. Todos os seus dados serão removidos em até 30 dias.',
+      answer: 'Você pode excluir sua conta permanentemente acessando Configurações > Gerenciar conta > Excluir conta. Todos os seus dados serão removidos em até 30 dias.',
       icon: Trash2,
     },
     {
